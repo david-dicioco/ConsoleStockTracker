@@ -74,7 +74,7 @@ public class AmazonSteps {
 	public void user_clicks_amazon_search_button() throws InterruptedException {
 
 		amazonPage.clickSearchButton();
-		Thread.sleep(defaultSleepTimer);
+		//Thread.sleep(defaultSleepTimer);
 	}
 
 	@And("^User is on Amazon (.*) results page$")
@@ -92,7 +92,7 @@ public class AmazonSteps {
 	public void click_product_link(String product) throws InterruptedException {
 
 		amazonPage.clickProductLink(product);
-		Thread.sleep(defaultSleepTimer);
+		//Thread.sleep(defaultSleepTimer);
 	}
 
 	//TODO: Put results for product stock in custom HTML

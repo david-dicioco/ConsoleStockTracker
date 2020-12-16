@@ -6,6 +6,14 @@
 //2) Location will be within Toronto
 //3) Should take a screen when doing the last step for each store
 
+//TAGS:
+//@AllFeatures
+//@BestBuyFeature
+//@AmazonFeature
+
+//IN PROGRESS:
+//@EBGamesFeature
+
 package StepDefinitions;
 
 import java.io.BufferedWriter;
@@ -28,13 +36,6 @@ import io.cucumber.junit.Cucumber;
 
 import cucumber.api.*;
 
-//TAGS:
-//@AllFeatures
-//@BestBuyFeature
-//@AmazonFeature
-
-//IN PROGRESS:
-//@EBGamesFeature
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/resources/Features", glue={"StepDefinitions"}, monochrome=true,
 plugin = { 	"pretty",  "junit:target/JUnitReports/report.xml",

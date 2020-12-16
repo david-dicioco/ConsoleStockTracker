@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-12-16T04:07:13.851Z",
+        "start_timestamp": "2020-12-16T06:11:19.926Z",
         "line": 15,
         "name": "Verify stock in Amazon for - PlayStation 4",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4066000000,
+              "duration": 4325000000,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 1893000000,
+              "duration": 2107000000,
               "status": "passed"
             },
             "line": 6,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 484000000,
+              "duration": 279000000,
               "status": "passed"
             },
             "line": 7,
@@ -55,7 +55,7 @@
           },
           {
             "result": {
-              "duration": 4189000000,
+              "duration": 1957000000,
               "status": "passed"
             },
             "line": 8,
@@ -67,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 315000000,
+              "duration": 547000000,
               "status": "passed"
             },
             "line": 9,
@@ -85,7 +85,7 @@
           },
           {
             "result": {
-              "duration": 7041000000,
+              "duration": 3677000000,
               "status": "passed"
             },
             "line": 10,
@@ -103,7 +103,7 @@
           },
           {
             "result": {
-              "duration": 1530000000,
+              "duration": 2442000000,
               "status": "passed"
             },
             "line": 11,
@@ -130,7 +130,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-16T04:07:33.444Z",
+        "start_timestamp": "2020-12-16T06:11:35.367Z",
         "line": 16,
         "name": "Verify stock in Amazon for - PlayStation 5",
         "description": "",
@@ -140,7 +140,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3165000000,
+              "duration": 3237000000,
               "status": "passed"
             },
             "line": 5,
@@ -152,7 +152,7 @@
           },
           {
             "result": {
-              "duration": 2947000000,
+              "duration": 1107000000,
               "status": "passed"
             },
             "line": 6,
@@ -164,7 +164,7 @@
           },
           {
             "result": {
-              "duration": 218000000,
+              "duration": 858000000,
               "status": "passed"
             },
             "line": 7,
@@ -182,7 +182,7 @@
           },
           {
             "result": {
-              "duration": 4812000000,
+              "duration": 1947000000,
               "status": "passed"
             },
             "line": 8,
@@ -194,7 +194,7 @@
           },
           {
             "result": {
-              "duration": 276000000,
+              "duration": 424000000,
               "status": "passed"
             },
             "line": 9,
@@ -212,7 +212,7 @@
           },
           {
             "result": {
-              "duration": 6850000000,
+              "duration": 3567000000,
               "status": "passed"
             },
             "line": 10,
@@ -231,7 +231,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinitions.AmazonSteps.verify_product_is_in_stock(AmazonSteps.java:132)\r\n\tat ✽.User verifies PlayStation 5 stock in Amazon(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/Amazon.feature:11)\r\n",
-              "duration": 1549000000,
+              "duration": 1951000000,
               "status": "failed"
             },
             "line": 11,
@@ -258,7 +258,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-16T04:07:53.272Z",
+        "start_timestamp": "2020-12-16T06:11:48.470Z",
         "line": 17,
         "name": "Verify stock in Amazon for - PlayStation 5 Digital Edition",
         "description": "",
@@ -268,7 +268,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3165000000,
+              "duration": 3593000000,
               "status": "passed"
             },
             "line": 5,
@@ -280,7 +280,7 @@
           },
           {
             "result": {
-              "duration": 2285000000,
+              "duration": 2094000000,
               "status": "passed"
             },
             "line": 6,
@@ -292,7 +292,7 @@
           },
           {
             "result": {
-              "duration": 265000000,
+              "duration": 276000000,
               "status": "passed"
             },
             "line": 7,
@@ -310,7 +310,7 @@
           },
           {
             "result": {
-              "duration": 3714000000,
+              "duration": 1708000000,
               "status": "passed"
             },
             "line": 8,
@@ -322,7 +322,7 @@
           },
           {
             "result": {
-              "duration": 296000000,
+              "duration": 436000000,
               "status": "passed"
             },
             "line": 9,
@@ -340,7 +340,7 @@
           },
           {
             "result": {
-              "duration": 6996000000,
+              "duration": 4017000000,
               "status": "passed"
             },
             "line": 10,
@@ -359,7 +359,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinitions.AmazonSteps.verify_product_is_in_stock(AmazonSteps.java:132)\r\n\tat ✽.User verifies PlayStation 5 Digital Edition stock in Amazon(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/Amazon.feature:11)\r\n",
-              "duration": 1484000000,
+              "duration": 1706000000,
               "status": "failed"
             },
             "line": 11,
@@ -386,7 +386,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-16T04:08:11.485Z",
+        "start_timestamp": "2020-12-16T06:12:02.309Z",
         "line": 18,
         "name": "Verify stock in Amazon for - Xbox One Console",
         "description": "",
@@ -396,7 +396,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3169000000,
+              "duration": 3656000000,
               "status": "passed"
             },
             "line": 5,
@@ -408,7 +408,7 @@
           },
           {
             "result": {
-              "duration": 1963000000,
+              "duration": 1500000000,
               "status": "passed"
             },
             "line": 6,
@@ -420,7 +420,7 @@
           },
           {
             "result": {
-              "duration": 203000000,
+              "duration": 806000000,
               "status": "passed"
             },
             "line": 7,
@@ -438,7 +438,7 @@
           },
           {
             "result": {
-              "duration": 3600000000,
+              "duration": 1931000000,
               "status": "passed"
             },
             "line": 8,
@@ -450,7 +450,7 @@
           },
           {
             "result": {
-              "duration": 273000000,
+              "duration": 382000000,
               "status": "passed"
             },
             "line": 9,
@@ -468,7 +468,7 @@
           },
           {
             "result": {
-              "duration": 4414000000,
+              "duration": 2832000000,
               "status": "passed"
             },
             "line": 10,
@@ -486,7 +486,7 @@
           },
           {
             "result": {
-              "duration": 1392000000,
+              "duration": 1943000000,
               "status": "passed"
             },
             "line": 11,
@@ -513,7 +513,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-16T04:08:26.502Z",
+        "start_timestamp": "2020-12-16T06:12:15.365Z",
         "line": 19,
         "name": "Verify stock in Amazon for - Xbox Series X",
         "description": "",
@@ -523,7 +523,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3161000000,
+              "duration": 3415000000,
               "status": "passed"
             },
             "line": 5,
@@ -535,7 +535,7 @@
           },
           {
             "result": {
-              "duration": 1630000000,
+              "duration": 1097000000,
               "status": "passed"
             },
             "line": 6,
@@ -547,7 +547,7 @@
           },
           {
             "result": {
-              "duration": 463000000,
+              "duration": 718000000,
               "status": "passed"
             },
             "line": 7,
@@ -565,7 +565,7 @@
           },
           {
             "result": {
-              "duration": 3770000000,
+              "duration": 1890000000,
               "status": "passed"
             },
             "line": 8,
@@ -577,7 +577,7 @@
           },
           {
             "result": {
-              "duration": 266000000,
+              "duration": 485000000,
               "status": "passed"
             },
             "line": 9,
@@ -595,7 +595,7 @@
           },
           {
             "result": {
-              "duration": 4400000000,
+              "duration": 3055000000,
               "status": "passed"
             },
             "line": 10,
@@ -614,7 +614,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinitions.AmazonSteps.verify_product_is_in_stock(AmazonSteps.java:132)\r\n\tat ✽.User verifies Xbox Series X stock in Amazon(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/Amazon.feature:11)\r\n",
-              "duration": 1426000000,
+              "duration": 1940000000,
               "status": "failed"
             },
             "line": 11,
@@ -641,7 +641,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-16T04:08:41.624Z",
+        "start_timestamp": "2020-12-16T06:12:27.971Z",
         "line": 20,
         "name": "Verify stock in Amazon for - Xbox Series S",
         "description": "",
@@ -651,7 +651,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3180000000,
+              "duration": 3309000000,
               "status": "passed"
             },
             "line": 5,
@@ -663,7 +663,7 @@
           },
           {
             "result": {
-              "duration": 1562000000,
+              "duration": 1719000000,
               "status": "passed"
             },
             "line": 6,
@@ -675,7 +675,7 @@
           },
           {
             "result": {
-              "duration": 481000000,
+              "duration": 671000000,
               "status": "passed"
             },
             "line": 7,
@@ -693,7 +693,7 @@
           },
           {
             "result": {
-              "duration": 3567000000,
+              "duration": 1822000000,
               "status": "passed"
             },
             "line": 8,
@@ -705,7 +705,7 @@
           },
           {
             "result": {
-              "duration": 252000000,
+              "duration": 615000000,
               "status": "passed"
             },
             "line": 9,
@@ -723,7 +723,7 @@
           },
           {
             "result": {
-              "duration": 4528000000,
+              "duration": 2614000000,
               "status": "passed"
             },
             "line": 10,
@@ -742,7 +742,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinitions.AmazonSteps.verify_product_is_in_stock(AmazonSteps.java:132)\r\n\tat ✽.User verifies Xbox Series S stock in Amazon(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/Amazon.feature:11)\r\n",
-              "duration": 1428000000,
+              "duration": 2037000000,
               "status": "failed"
             },
             "line": 11,
@@ -797,8 +797,8 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-12-16T04:08:56.629Z",
-        "line": 15,
+        "start_timestamp": "2020-12-16T06:12:40.763Z",
+        "line": 14,
         "name": "Verify stock in BestBuy for - PlayStation 4",
         "description": "",
         "id": "feature-to-test-product-stock-in-bestbuy;verify-stock-in-bestbuy-for---\u003cproduct\u003e;;2",
@@ -807,7 +807,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3145000000,
+              "duration": 3392000000,
               "status": "passed"
             },
             "line": 5,
@@ -819,7 +819,7 @@
           },
           {
             "result": {
-              "duration": 4578000000,
+              "duration": 5148000000,
               "status": "passed"
             },
             "line": 6,
@@ -831,7 +831,7 @@
           },
           {
             "result": {
-              "duration": 170000000,
+              "duration": 161000000,
               "status": "passed"
             },
             "line": 7,
@@ -849,7 +849,7 @@
           },
           {
             "result": {
-              "duration": 2743000000,
+              "duration": 3080000000,
               "status": "passed"
             },
             "line": 8,
@@ -861,10 +861,10 @@
           },
           {
             "result": {
-              "duration": 2541000000,
+              "duration": 2701000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "User clicks BestBuy PlayStation 4 link",
             "match": {
               "arguments": [
@@ -879,10 +879,10 @@
           },
           {
             "result": {
-              "duration": 2169000000,
+              "duration": 3269000000,
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "User verifies PlayStation 4 stock in BestBuy",
             "match": {
               "arguments": [
@@ -906,8 +906,8 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-16T04:09:11.981Z",
-        "line": 16,
+        "start_timestamp": "2020-12-16T06:12:58.524Z",
+        "line": 15,
         "name": "Verify stock in BestBuy for - PlayStation 5",
         "description": "",
         "id": "feature-to-test-product-stock-in-bestbuy;verify-stock-in-bestbuy-for---\u003cproduct\u003e;;3",
@@ -916,7 +916,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3164000000,
+              "duration": 3334000000,
               "status": "passed"
             },
             "line": 5,
@@ -928,7 +928,7 @@
           },
           {
             "result": {
-              "duration": 3868000000,
+              "duration": 4972000000,
               "status": "passed"
             },
             "line": 6,
@@ -940,7 +940,7 @@
           },
           {
             "result": {
-              "duration": 154000000,
+              "duration": 189000000,
               "status": "passed"
             },
             "line": 7,
@@ -958,7 +958,7 @@
           },
           {
             "result": {
-              "duration": 2780000000,
+              "duration": 3172000000,
               "status": "passed"
             },
             "line": 8,
@@ -970,10 +970,10 @@
           },
           {
             "result": {
-              "duration": 2794000000,
+              "duration": 3366000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "User clicks BestBuy PlayStation 5 link",
             "match": {
               "arguments": [
@@ -988,11 +988,11 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinitions.BestBuySteps.confirm_product_is_in_stock(BestBuySteps.java:110)\r\n\tat ✽.User verifies PlayStation 5 stock in BestBuy(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/BestBuy.feature:11)\r\n",
-              "duration": 1953000000,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinitions.BestBuySteps.confirm_product_is_in_stock(BestBuySteps.java:110)\r\n\tat ✽.User verifies PlayStation 5 stock in BestBuy(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/BestBuy.feature:10)\r\n",
+              "duration": 2568000000,
               "status": "failed"
             },
-            "line": 11,
+            "line": 10,
             "name": "User verifies PlayStation 5 stock in BestBuy",
             "match": {
               "arguments": [
@@ -1016,8 +1016,8 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-16T04:09:26.697Z",
-        "line": 17,
+        "start_timestamp": "2020-12-16T06:13:16.133Z",
+        "line": 16,
         "name": "Verify stock in BestBuy for - PlayStation 5 Digital Edition",
         "description": "",
         "id": "feature-to-test-product-stock-in-bestbuy;verify-stock-in-bestbuy-for---\u003cproduct\u003e;;4",
@@ -1026,7 +1026,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3136000000,
+              "duration": 3140000000,
               "status": "passed"
             },
             "line": 5,
@@ -1038,7 +1038,7 @@
           },
           {
             "result": {
-              "duration": 4206000000,
+              "duration": 5681000000,
               "status": "passed"
             },
             "line": 6,
@@ -1050,7 +1050,7 @@
           },
           {
             "result": {
-              "duration": 181000000,
+              "duration": 264000000,
               "status": "passed"
             },
             "line": 7,
@@ -1068,7 +1068,7 @@
           },
           {
             "result": {
-              "duration": 2816000000,
+              "duration": 3099000000,
               "status": "passed"
             },
             "line": 8,
@@ -1080,10 +1080,10 @@
           },
           {
             "result": {
-              "duration": 2591000000,
+              "duration": 2676000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "User clicks BestBuy PlayStation 5 Digital Edition link",
             "match": {
               "arguments": [
@@ -1098,11 +1098,11 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinitions.BestBuySteps.confirm_product_is_in_stock(BestBuySteps.java:110)\r\n\tat ✽.User verifies PlayStation 5 Digital Edition stock in BestBuy(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/BestBuy.feature:11)\r\n",
-              "duration": 2015000000,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinitions.BestBuySteps.confirm_product_is_in_stock(BestBuySteps.java:110)\r\n\tat ✽.User verifies PlayStation 5 Digital Edition stock in BestBuy(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/BestBuy.feature:10)\r\n",
+              "duration": 2795000000,
               "status": "failed"
             },
-            "line": 11,
+            "line": 10,
             "name": "User verifies PlayStation 5 Digital Edition stock in BestBuy",
             "match": {
               "arguments": [
@@ -1126,8 +1126,8 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-16T04:09:41.644Z",
-        "line": 18,
+        "start_timestamp": "2020-12-16T06:13:33.792Z",
+        "line": 17,
         "name": "Verify stock in BestBuy for - Xbox One Console",
         "description": "",
         "id": "feature-to-test-product-stock-in-bestbuy;verify-stock-in-bestbuy-for---\u003cproduct\u003e;;5",
@@ -1136,7 +1136,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3138000000,
+              "duration": 3510000000,
               "status": "passed"
             },
             "line": 5,
@@ -1148,7 +1148,7 @@
           },
           {
             "result": {
-              "duration": 4823000000,
+              "duration": 5226000000,
               "status": "passed"
             },
             "line": 6,
@@ -1160,7 +1160,7 @@
           },
           {
             "result": {
-              "duration": 145000000,
+              "duration": 210000000,
               "status": "passed"
             },
             "line": 7,
@@ -1178,7 +1178,7 @@
           },
           {
             "result": {
-              "duration": 2790000000,
+              "duration": 3065000000,
               "status": "passed"
             },
             "line": 8,
@@ -1190,10 +1190,10 @@
           },
           {
             "result": {
-              "duration": 2571000000,
+              "duration": 3231000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "User clicks BestBuy Xbox One Console link",
             "match": {
               "arguments": [
@@ -1208,11 +1208,11 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinitions.BestBuySteps.confirm_product_is_in_stock(BestBuySteps.java:110)\r\n\tat ✽.User verifies Xbox One Console stock in BestBuy(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/BestBuy.feature:11)\r\n",
-              "duration": 2933000000,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinitions.BestBuySteps.confirm_product_is_in_stock(BestBuySteps.java:110)\r\n\tat ✽.User verifies Xbox One Console stock in BestBuy(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/BestBuy.feature:10)\r\n",
+              "duration": 3424000000,
               "status": "failed"
             },
-            "line": 11,
+            "line": 10,
             "name": "User verifies Xbox One Console stock in BestBuy",
             "match": {
               "arguments": [
@@ -1236,8 +1236,8 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-16T04:09:58.047Z",
-        "line": 19,
+        "start_timestamp": "2020-12-16T06:13:52.463Z",
+        "line": 18,
         "name": "Verify stock in BestBuy for - Xbox Series X",
         "description": "",
         "id": "feature-to-test-product-stock-in-bestbuy;verify-stock-in-bestbuy-for---\u003cproduct\u003e;;6",
@@ -1246,7 +1246,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3175000000,
+              "duration": 3120000000,
               "status": "passed"
             },
             "line": 5,
@@ -1258,7 +1258,7 @@
           },
           {
             "result": {
-              "duration": 4576000000,
+              "duration": 5266000000,
               "status": "passed"
             },
             "line": 6,
@@ -1270,7 +1270,7 @@
           },
           {
             "result": {
-              "duration": 125000000,
+              "duration": 228000000,
               "status": "passed"
             },
             "line": 7,
@@ -1288,7 +1288,7 @@
           },
           {
             "result": {
-              "duration": 3019000000,
+              "duration": 2878000000,
               "status": "passed"
             },
             "line": 8,
@@ -1300,10 +1300,10 @@
           },
           {
             "result": {
-              "duration": 2519000000,
+              "duration": 2733000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "User clicks BestBuy Xbox Series X link",
             "match": {
               "arguments": [
@@ -1318,11 +1318,11 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinitions.BestBuySteps.confirm_product_is_in_stock(BestBuySteps.java:110)\r\n\tat ✽.User verifies Xbox Series X stock in BestBuy(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/BestBuy.feature:11)\r\n",
-              "duration": 1844000000,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinitions.BestBuySteps.confirm_product_is_in_stock(BestBuySteps.java:110)\r\n\tat ✽.User verifies Xbox Series X stock in BestBuy(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/BestBuy.feature:10)\r\n",
+              "duration": 3534000000,
               "status": "failed"
             },
-            "line": 11,
+            "line": 10,
             "name": "User verifies Xbox Series X stock in BestBuy",
             "match": {
               "arguments": [
@@ -1346,8 +1346,8 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-16T04:10:13.310Z",
-        "line": 20,
+        "start_timestamp": "2020-12-16T06:14:10.230Z",
+        "line": 19,
         "name": "Verify stock in BestBuy for - Xbox Series S",
         "description": "",
         "id": "feature-to-test-product-stock-in-bestbuy;verify-stock-in-bestbuy-for---\u003cproduct\u003e;;7",
@@ -1356,7 +1356,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3166000000,
+              "duration": 3150000000,
               "status": "passed"
             },
             "line": 5,
@@ -1368,7 +1368,7 @@
           },
           {
             "result": {
-              "duration": 4885000000,
+              "duration": 5362000000,
               "status": "passed"
             },
             "line": 6,
@@ -1380,7 +1380,7 @@
           },
           {
             "result": {
-              "duration": 118000000,
+              "duration": 195000000,
               "status": "passed"
             },
             "line": 7,
@@ -1398,7 +1398,7 @@
           },
           {
             "result": {
-              "duration": 2830000000,
+              "duration": 3196000000,
               "status": "passed"
             },
             "line": 8,
@@ -1410,10 +1410,10 @@
           },
           {
             "result": {
-              "duration": 12755000000,
+              "duration": 11973000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "User clicks BestBuy Xbox Series S link",
             "match": {
               "arguments": [
@@ -1428,11 +1428,11 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinitions.BestBuySteps.confirm_product_is_in_stock(BestBuySteps.java:110)\r\n\tat ✽.User verifies Xbox Series S stock in BestBuy(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/BestBuy.feature:11)\r\n",
-              "duration": 2804000000,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinitions.BestBuySteps.confirm_product_is_in_stock(BestBuySteps.java:110)\r\n\tat ✽.User verifies Xbox Series S stock in BestBuy(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/BestBuy.feature:10)\r\n",
+              "duration": 2798000000,
               "status": "failed"
             },
-            "line": 11,
+            "line": 10,
             "name": "User verifies Xbox Series S stock in BestBuy",
             "match": {
               "arguments": [
