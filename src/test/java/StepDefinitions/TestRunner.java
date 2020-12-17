@@ -41,7 +41,7 @@ import io.cucumber.junit.Cucumber;
 plugin = { 	"pretty",  "junit:target/JUnitReports/report.xml",
 		"json:target/JSONReports/report.json",
 "html:target/HTMLReports"},
-tags="@AmazonFeature")
+tags="@AllFeatures")
 public class TestRunner {
 
 	//Before everything (scenarios, steps, etc.) replace content of "TestReport.html" to default values

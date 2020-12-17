@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="13.197">
-<testcase classname="Feature to test product stock in Amazon" name="Verify stock in Amazon for - PlayStation 4" time="13.017">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="13.257">
+<testcase classname="Feature to test product stock in Amazon" name="Verify stock in Amazon for - PlayStation 4" time="13.092">
 <system-out><![CDATA[Given Browser is open - Amazon..............................................passed
 And User enters Amazon homepage.............................................passed
 When User inputs a PlayStation 4 in Amazon search box.......................passed
