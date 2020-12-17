@@ -34,14 +34,14 @@ import org.junit.runner.RunWith;
 import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.Cucumber;
 
-import cucumber.api.*;
+//import cucumber.api.*;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/resources/Features", glue={"StepDefinitions"}, monochrome=true,
 plugin = { 	"pretty",  "junit:target/JUnitReports/report.xml",
 		"json:target/JSONReports/report.json",
 "html:target/HTMLReports"},
-tags="@AllFeatures")
+tags="@AmazonFeature")
 public class TestRunner {
 
 	//Before everything (scenarios, steps, etc.) replace content of "TestReport.html" to default values
