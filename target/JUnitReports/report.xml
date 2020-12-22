@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="26.456">
-<testcase classname="Feature to test product stock in BestBuy" name="Verify stock in BestBuy for - Xbox Series S" time="26.287">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="24.416">
+<testcase classname="Feature to test product stock in BestBuy" name="Verify stock in BestBuy for - Xbox Series S" time="24.272">
 <failure message="" type="java.lang.AssertionError"><![CDATA[Given Browser is open - BestBuy.............................................passed
 And User enters BestBuy homepage............................................passed
 When User inputs a Xbox Series S in BestBuy search box......................passed

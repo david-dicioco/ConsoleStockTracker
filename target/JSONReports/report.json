@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-12-22T14:16:32.336Z",
+        "start_timestamp": "2020-12-22T15:05:12.364Z",
         "line": 20,
         "name": "Verify stock in BestBuy for - Xbox Series S",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3000000,
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 4030000000,
+              "duration": 4262000000,
               "status": "passed"
             },
             "line": 6,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 4179000000,
+              "duration": 4185000000,
               "status": "passed"
             },
             "line": 7,
@@ -55,7 +55,7 @@
           },
           {
             "result": {
-              "duration": 4665000000,
+              "duration": 4691000000,
               "status": "passed"
             },
             "line": 8,
@@ -67,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 12170000000,
+              "duration": 10009000000,
               "status": "passed"
             },
             "line": 10,
@@ -86,7 +86,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinitions.BestBuySteps.confirm_product_is_in_stock(BestBuySteps.java:113)\r\n\tat ✽.User verifies Xbox Series S stock in BestBuy(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/BestBuy.feature:11)\r\n",
-              "duration": 1153000000,
+              "duration": 1063000000,
               "status": "failed"
             },
             "line": 11,
