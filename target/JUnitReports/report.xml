@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="10" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="142.74">
-<testcase classname="Feature to test product stock in Amazon" name="Verify stock in Amazon for - PlayStation 4" time="8.402">
+<testsuite errors="0" failures="10" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="164.127">
+<testcase classname="Feature to test product stock in Amazon" name="Verify stock in Amazon for - PlayStation 4" time="9.057">
 <system-out><![CDATA[Given Browser is open - Amazon..............................................passed
 And User enters Amazon homepage.............................................passed
 When User inputs a PlayStation 4 in Amazon search box.......................passed
@@ -10,7 +10,7 @@ And User clicks Amazon PlayStation 4 link...................................pass
 Then User verifies PlayStation 4 stock in Amazon............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Feature to test product stock in Amazon" name="Verify stock in Amazon for - PlayStation 5" time="7.332">
+<testcase classname="Feature to test product stock in Amazon" name="Verify stock in Amazon for - PlayStation 5" time="8.284">
 <failure message="" type="java.lang.AssertionError"><![CDATA[Given Browser is open - Amazon..............................................passed
 And User enters Amazon homepage.............................................passed
 When User inputs a PlayStation 5 in Amazon search box.......................passed
@@ -27,7 +27,7 @@ java.lang.AssertionError
 	at ✽.User verifies PlayStation 5 stock in Amazon(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/Amazon.feature:11)
 ]]></failure>
 </testcase>
-<testcase classname="Feature to test product stock in Amazon" name="Verify stock in Amazon for - PlayStation 5 Digital Edition" time="6.799">
+<testcase classname="Feature to test product stock in Amazon" name="Verify stock in Amazon for - PlayStation 5 Digital Edition" time="7.302">
 <failure message="" type="java.lang.AssertionError"><![CDATA[Given Browser is open - Amazon..............................................passed
 And User enters Amazon homepage.............................................passed
 When User inputs a PlayStation 5 Digital Edition in Amazon search box.......passed
@@ -44,7 +44,7 @@ java.lang.AssertionError
 	at ✽.User verifies PlayStation 5 Digital Edition stock in Amazon(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/Amazon.feature:11)
 ]]></failure>
 </testcase>
-<testcase classname="Feature to test product stock in Amazon" name="Verify stock in Amazon for - Xbox One Console" time="6.288">
+<testcase classname="Feature to test product stock in Amazon" name="Verify stock in Amazon for - Xbox One Console" time="7.177">
 <system-out><![CDATA[Given Browser is open - Amazon..............................................passed
 And User enters Amazon homepage.............................................passed
 When User inputs a Xbox One Console in Amazon search box....................passed
@@ -54,7 +54,7 @@ And User clicks Amazon Xbox One Console link................................pass
 Then User verifies Xbox One Console stock in Amazon.........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Feature to test product stock in Amazon" name="Verify stock in Amazon for - Xbox Series X" time="6.094">
+<testcase classname="Feature to test product stock in Amazon" name="Verify stock in Amazon for - Xbox Series X" time="7.248">
 <failure message="" type="java.lang.AssertionError"><![CDATA[Given Browser is open - Amazon..............................................passed
 And User enters Amazon homepage.............................................passed
 When User inputs a Xbox Series X in Amazon search box.......................passed
@@ -71,7 +71,7 @@ java.lang.AssertionError
 	at ✽.User verifies Xbox Series X stock in Amazon(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/Amazon.feature:11)
 ]]></failure>
 </testcase>
-<testcase classname="Feature to test product stock in Amazon" name="Verify stock in Amazon for - Xbox Series S" time="6.201">
+<testcase classname="Feature to test product stock in Amazon" name="Verify stock in Amazon for - Xbox Series S" time="6.742">
 <failure message="" type="java.lang.AssertionError"><![CDATA[Given Browser is open - Amazon..............................................passed
 And User enters Amazon homepage.............................................passed
 When User inputs a Xbox Series S in Amazon search box.......................passed
@@ -88,7 +88,7 @@ java.lang.AssertionError
 	at ✽.User verifies Xbox Series S stock in Amazon(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/Amazon.feature:11)
 ]]></failure>
 </testcase>
-<testcase classname="Feature to test product stock in BestBuy" name="Verify stock in BestBuy for - PlayStation 4" time="11.62">
+<testcase classname="Feature to test product stock in BestBuy" name="Verify stock in BestBuy for - PlayStation 4" time="13.451">
 <failure message="" type="java.lang.AssertionError"><![CDATA[Given Browser is open - BestBuy.............................................passed
 And User enters BestBuy homepage............................................passed
 When User inputs a PlayStation 4 in BestBuy search box......................passed
@@ -104,7 +104,7 @@ java.lang.AssertionError
 	at ✽.User verifies PlayStation 4 stock in BestBuy(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/BestBuy.feature:11)
 ]]></failure>
 </testcase>
-<testcase classname="Feature to test product stock in BestBuy" name="Verify stock in BestBuy for - PlayStation 5" time="15.322">
+<testcase classname="Feature to test product stock in BestBuy" name="Verify stock in BestBuy for - PlayStation 5" time="20.101">
 <failure message="" type="java.lang.AssertionError"><![CDATA[Given Browser is open - BestBuy.............................................passed
 And User enters BestBuy homepage............................................passed
 When User inputs a PlayStation 5 in BestBuy search box......................passed
@@ -120,7 +120,7 @@ java.lang.AssertionError
 	at ✽.User verifies PlayStation 5 stock in BestBuy(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/BestBuy.feature:11)
 ]]></failure>
 </testcase>
-<testcase classname="Feature to test product stock in BestBuy" name="Verify stock in BestBuy for - PlayStation 5 Digital Edition" time="16.769">
+<testcase classname="Feature to test product stock in BestBuy" name="Verify stock in BestBuy for - PlayStation 5 Digital Edition" time="18.794">
 <failure message="" type="java.lang.AssertionError"><![CDATA[Given Browser is open - BestBuy.............................................passed
 And User enters BestBuy homepage............................................passed
 When User inputs a PlayStation 5 Digital Edition in BestBuy search box......passed
@@ -136,7 +136,7 @@ java.lang.AssertionError
 	at ✽.User verifies PlayStation 5 Digital Edition stock in BestBuy(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/BestBuy.feature:11)
 ]]></failure>
 </testcase>
-<testcase classname="Feature to test product stock in BestBuy" name="Verify stock in BestBuy for - Xbox One Console" time="16.891">
+<testcase classname="Feature to test product stock in BestBuy" name="Verify stock in BestBuy for - Xbox One Console" time="17.677">
 <failure message="" type="java.lang.AssertionError"><![CDATA[Given Browser is open - BestBuy.............................................passed
 And User enters BestBuy homepage............................................passed
 When User inputs a Xbox One Console in BestBuy search box...................passed
@@ -152,7 +152,7 @@ java.lang.AssertionError
 	at ✽.User verifies Xbox One Console stock in BestBuy(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/BestBuy.feature:11)
 ]]></failure>
 </testcase>
-<testcase classname="Feature to test product stock in BestBuy" name="Verify stock in BestBuy for - Xbox Series X" time="18.537">
+<testcase classname="Feature to test product stock in BestBuy" name="Verify stock in BestBuy for - Xbox Series X" time="19.115">
 <failure message="" type="java.lang.AssertionError"><![CDATA[Given Browser is open - BestBuy.............................................passed
 And User enters BestBuy homepage............................................passed
 When User inputs a Xbox Series X in BestBuy search box......................passed
@@ -168,7 +168,7 @@ java.lang.AssertionError
 	at ✽.User verifies Xbox Series X stock in BestBuy(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/BestBuy.feature:11)
 ]]></failure>
 </testcase>
-<testcase classname="Feature to test product stock in BestBuy" name="Verify stock in BestBuy for - Xbox Series S" time="22.25">
+<testcase classname="Feature to test product stock in BestBuy" name="Verify stock in BestBuy for - Xbox Series S" time="28.872">
 <failure message="" type="java.lang.AssertionError"><![CDATA[Given Browser is open - BestBuy.............................................passed
 And User enters BestBuy homepage............................................passed
 When User inputs a Xbox Series S in BestBuy search box......................passed

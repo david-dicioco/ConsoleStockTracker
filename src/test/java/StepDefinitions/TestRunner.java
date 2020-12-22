@@ -39,8 +39,6 @@ import io.cucumber.junit.Cucumber;
 
 //import cucumber.api.*;
 
-
-
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/resources/Features", glue={"StepDefinitions"}, monochrome=true,
 plugin = { 	"pretty",  "junit:target/JUnitReports/report.xml",

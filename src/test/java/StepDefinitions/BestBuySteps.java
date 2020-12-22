@@ -27,7 +27,7 @@ public class BestBuySteps {
 	private BestBuyPage bestbuyPage;
 	private Document doc;
 	private String projectPath;
-	private int defaultSleepTimer = 2000;
+	private int defaultSleepTimer = 4000; //2000
 	private Element div;
 	private Element urlLink;
 
@@ -58,7 +58,7 @@ public class BestBuySteps {
 		
 		bestbuyPage = new BestBuyPage(driver);
 		bestbuyPage.enterProduct(product);	
-		//Thread.sleep(defaultSleepTimer);
+		Thread.sleep(defaultSleepTimer);
 	}
 	
 	@And("User clicks BestBuy search button")
