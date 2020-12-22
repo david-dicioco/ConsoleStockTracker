@@ -12,9 +12,9 @@ Feature: Feature to test product stock in BestBuy
 
     Examples: 
       | product                       |
-      | PlayStation 4                 |
-      | PlayStation 5                 |
-      | PlayStation 5 Digital Edition |
-      | Xbox One Console              |
-      | Xbox Series X                 |
+      #| PlayStation 4                 |
+      #| PlayStation 5                 |
+      #| PlayStation 5 Digital Edition |
+      #| Xbox One Console              |
+      #| Xbox Series X                 |
       | Xbox Series S                 |
