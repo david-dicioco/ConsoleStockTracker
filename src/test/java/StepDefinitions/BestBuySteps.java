@@ -23,8 +23,8 @@ import io.cucumber.java.en.*;
 
 public class BestBuySteps {
 	
-	WebDriver driver = null;
-	BestBuyPage bestbuyPage;
+	private WebDriver driver = null;
+	private BestBuyPage bestbuyPage;
 	private Document doc;
 	private String projectPath;
 	private int defaultSleepTimer = 2000;
@@ -34,14 +34,17 @@ public class BestBuySteps {
 	@Given("Browser is open - BestBuy")
 	public void browser_is_open_bestbuy() {
 
-		projectPath = System.getProperty("user.dir");
+		/*projectPath = System.getProperty("user.dir");
 		System.out.println("Project path is:" + projectPath);
 
 		System.setProperty("webdriver.chrome.driver", projectPath+"/src/test/resources/drivers/chromedriver.exe");
 
-		driver = new ChromeDriver();
+		driver = new ChromeDriver();*/
 		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);	//may not need
 		//driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+		
+		driver = TestRunner.driver;
+		projectPath = TestRunner.projectPath;
 	}
 	
 	@And("User enters BestBuy homepage")
@@ -105,8 +108,8 @@ public class BestBuySteps {
 			htmlWriter.write(doc.toString());
 			htmlWriter.close();
 
-			driver.close();
-			driver.quit();
+			//driver.close();
+			//driver.quit();
 			Assert.fail(); //if product is not in stock, fail this step
 			
 		} else {
@@ -149,8 +152,8 @@ public class BestBuySteps {
 			htmlWriter.write(doc.toString());
 			htmlWriter.close();
 			
-			driver.close();
-			driver.quit();
+			//driver.close();
+			//driver.quit();
 		}
 	}
 }

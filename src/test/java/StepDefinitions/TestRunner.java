@@ -31,10 +31,15 @@ import org.jsoup.nodes.Element;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.Cucumber;
 
 //import cucumber.api.*;
+
+
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/resources/Features", glue={"StepDefinitions"}, monochrome=true,
@@ -43,11 +48,19 @@ plugin = { 	"pretty",  "junit:target/JUnitReports/report.xml",
 "html:target/HTMLReports"},
 tags="@AllFeatures")
 public class TestRunner {
-
+	
+	public static WebDriver driver = null;
+	public static String projectPath;
+		
 	//Before everything (scenarios, steps, etc.) replace content of "TestReport.html" to default values
 	@BeforeClass
 	public static void writeValuesInHTMLReport() throws IOException {
-
+		
+		projectPath = System.getProperty("user.dir");
+		System.out.println("Project path is:" + projectPath);
+		System.setProperty("webdriver.chrome.driver", projectPath+"/src/test/resources/drivers/chromedriver.exe");
+		driver = new ChromeDriver();
+		
 		String projectPath = System.getProperty("user.dir");
 		File input = new File(projectPath+"/target/ConsoleStockReport_DefaultValues.html");
 		Document doc = Jsoup.parse(input, "UTF-8", "");
@@ -60,6 +73,9 @@ public class TestRunner {
 
 	@AfterClass
 	public static void writeProductStockStatus_HTMLReport() throws IOException {
+		
+		driver.close();
+		driver.quit();
 
 		//Put completion date and time in report
 		String projectPath = System.getProperty("user.dir");

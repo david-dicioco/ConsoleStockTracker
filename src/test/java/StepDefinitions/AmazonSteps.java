@@ -46,14 +46,17 @@ public class AmazonSteps {
 	@Given("Browser is open - Amazon")
 	public void browser_is_open_amazon() throws IOException {
 
-		projectPath = System.getProperty("user.dir");
+		/*projectPath = System.getProperty("user.dir");
 		System.out.println("Project path is:" + projectPath);
 
 		System.setProperty("webdriver.chrome.driver", projectPath+"/src/test/resources/drivers/chromedriver.exe");
 
-		driver = new ChromeDriver();
+		driver = new ChromeDriver();*/		
 		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);	//may not need
 		//driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);	
+		
+		driver = TestRunner.driver;
+		projectPath = TestRunner.projectPath;
 	}
 
 	@And("User enters Amazon homepage")
@@ -82,8 +85,8 @@ public class AmazonSteps {
 
 		if(!amazonPage.verifyProductResultsPage(product)) {
 			System.out.println("User not in " + product + " results page");
-			driver.close();
-			driver.quit();
+			//driver.close();
+			//driver.quit();
 			Assert.fail();
 		}
 	}
@@ -127,8 +130,8 @@ public class AmazonSteps {
 			htmlWriter.write(doc.toString());
 			htmlWriter.close();
 
-			driver.close();
-			driver.quit();
+			//driver.close();
+			//driver.quit();
 			Assert.fail(); //if product is not in stock, fail this step
 			
 		} else {
@@ -165,7 +168,7 @@ public class AmazonSteps {
 			htmlWriter.close();
 		}
 		
-		driver.close();
-		driver.quit();
+		//driver.close();
+		//driver.quit();
 	}
 }
