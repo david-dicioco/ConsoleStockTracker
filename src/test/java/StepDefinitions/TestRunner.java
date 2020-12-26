@@ -19,11 +19,13 @@ package StepDefinitions;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Properties;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -53,6 +55,14 @@ public class TestRunner {
 	//Before everything (scenarios, steps, etc.) replace content of "TestReport.html" to default values
 	@BeforeClass
 	public static void writeValuesInHTMLReport() throws IOException {
+		
+		//Property File Example -> to be used inside AmazonSteps.java and BestBuySteps.java
+		FileReader reader=new FileReader("db.properties");
+	    Properties p=new Properties();
+	    p.load(reader);
+	    System.out.println("EXAMPLE - user: " + p.getProperty("user"));
+	    System.out.println("EXAMPLE - password: " +p.getProperty("password"));
+		
 		
 		projectPath = System.getProperty("user.dir");
 		System.out.println("Project path is:" + projectPath);

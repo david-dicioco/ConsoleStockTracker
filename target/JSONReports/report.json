@@ -3,102 +3,119 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-12-22T15:05:12.364Z",
-        "line": 20,
-        "name": "Verify stock in BestBuy for - Xbox Series S",
+        "start_timestamp": "2020-12-26T17:11:52.395Z",
+        "line": 15,
+        "name": "Verify stock in Amazon for - PlayStation 4",
         "description": "",
-        "id": "feature-to-test-product-stock-in-bestbuy;verify-stock-in-bestbuy-for---\u003cproduct\u003e;;2",
+        "id": "feature-to-test-product-stock-in-amazon;verify-stock-in-amazon-for---\u003cproduct\u003e;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 3000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "Browser is open - BestBuy",
+            "name": "Browser is open - Amazon",
             "match": {
-              "location": "StepDefinitions.BestBuySteps.browser_is_open_bestbuy()"
+              "location": "StepDefinitions.AmazonSteps.browser_is_open_amazon()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 4262000000,
+              "duration": 1435000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "User enters BestBuy homepage",
+            "name": "User enters Amazon homepage",
             "match": {
-              "location": "StepDefinitions.BestBuySteps.user_is_on_bestbuy_search_page()"
+              "location": "StepDefinitions.AmazonSteps.user_enters_amazon_page()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 4185000000,
+              "duration": 166000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "User inputs a Xbox Series S in BestBuy search box",
+            "name": "User inputs a PlayStation 4 in Amazon search box",
             "match": {
               "arguments": [
                 {
-                  "val": "Xbox Series S",
+                  "val": "PlayStation 4",
                   "offset": 14
                 }
               ],
-              "location": "StepDefinitions.BestBuySteps.user_enters_product_in_search_box(java.lang.String)"
+              "location": "StepDefinitions.AmazonSteps.user_enters_a_text_in_search_box_amazon(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 4691000000,
+              "duration": 4743000000,
               "status": "passed"
             },
             "line": 8,
-            "name": "User clicks BestBuy search button",
+            "name": "User clicks Amazon search button",
             "match": {
-              "location": "StepDefinitions.BestBuySteps.user_clicks_bestbuy_search_button()"
+              "location": "StepDefinitions.AmazonSteps.user_clicks_amazon_search_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 10009000000,
+              "duration": 449000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is on Amazon PlayStation 4 results page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PlayStation 4",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.AmazonSteps.user_is_on_product_results_page(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6904000000,
               "status": "passed"
             },
             "line": 10,
-            "name": "User clicks BestBuy Xbox Series S link",
+            "name": "User clicks Amazon PlayStation 4 link",
             "match": {
               "arguments": [
                 {
-                  "val": "Xbox Series S",
-                  "offset": 20
+                  "val": "PlayStation 4",
+                  "offset": 19
                 }
               ],
-              "location": "StepDefinitions.BestBuySteps.user_is_navigated_to_product_results_click_product(java.lang.String)"
+              "location": "StepDefinitions.AmazonSteps.click_product_link(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinitions.BestBuySteps.confirm_product_is_in_stock(BestBuySteps.java:113)\r\n\tat ✽.User verifies Xbox Series S stock in BestBuy(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/BestBuy.feature:11)\r\n",
-              "duration": 1063000000,
-              "status": "failed"
+              "duration": 755000000,
+              "status": "passed"
             },
             "line": 11,
-            "name": "User verifies Xbox Series S stock in BestBuy",
+            "name": "User verifies PlayStation 4 stock in Amazon",
             "match": {
               "arguments": [
                 {
-                  "val": "Xbox Series S",
+                  "val": "PlayStation 4",
                   "offset": 14
                 }
               ],
-              "location": "StepDefinitions.BestBuySteps.confirm_product_is_in_stock(java.lang.String)"
+              "location": "StepDefinitions.AmazonSteps.verify_product_is_in_stock(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -108,16 +125,16 @@
             "name": "@AllFeatures"
           },
           {
-            "name": "@BestBuyFeature"
+            "name": "@AmazonFeature"
           }
         ]
       }
     ],
-    "name": "Feature to test product stock in BestBuy",
+    "name": "Feature to test product stock in Amazon",
     "description": "",
-    "id": "feature-to-test-product-stock-in-bestbuy",
+    "id": "feature-to-test-product-stock-in-amazon",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/Features/BestBuy.feature",
+    "uri": "file:src/test/resources/Features/Amazon.feature",
     "tags": [
       {
         "name": "@AllFeatures",
@@ -128,7 +145,7 @@
         }
       },
       {
-        "name": "@BestBuyFeature",
+        "name": "@AmazonFeature",
         "type": "Tag",
         "location": {
           "line": 1,

@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="24.416">
-<testcase classname="Feature to test product stock in BestBuy" name="Verify stock in BestBuy for - Xbox Series S" time="24.272">
-<failure message="" type="java.lang.AssertionError"><![CDATA[Given Browser is open - BestBuy.............................................passed
-And User enters BestBuy homepage............................................passed
-When User inputs a Xbox Series S in BestBuy search box......................passed
-And User clicks BestBuy search button.......................................passed
-And User clicks BestBuy Xbox Series S link..................................passed
-Then User verifies Xbox Series S stock in BestBuy...........................failed
-
-StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.fail(Assert.java:96)
-	at StepDefinitions.BestBuySteps.confirm_product_is_in_stock(BestBuySteps.java:113)
-	at ✽.User verifies Xbox Series S stock in BestBuy(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/BestBuy.feature:11)
-]]></failure>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="14.746">
+<testcase classname="Feature to test product stock in Amazon" name="Verify stock in Amazon for - PlayStation 4" time="14.534">
+<system-out><![CDATA[Given Browser is open - Amazon..............................................passed
+And User enters Amazon homepage.............................................passed
+When User inputs a PlayStation 4 in Amazon search box.......................passed
+And User clicks Amazon search button........................................passed
+And User is on Amazon PlayStation 4 results page............................passed
+And User clicks Amazon PlayStation 4 link...................................passed
+Then User verifies PlayStation 4 stock in Amazon............................passed
+]]></system-out>
 </testcase>
 </testsuite>

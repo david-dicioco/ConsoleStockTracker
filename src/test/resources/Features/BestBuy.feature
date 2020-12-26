@@ -16,5 +16,5 @@ Feature: Feature to test product stock in BestBuy
       #| PlayStation 5                 |
       #| PlayStation 5 Digital Edition |
       #| Xbox One Console              |
-      | Xbox Series X                 |
+      #| Xbox Series X                 |
       #| Xbox Series S                 |
