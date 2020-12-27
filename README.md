@@ -2,7 +2,7 @@
 
 Features to be Added:
 
-COMPLETED -> Load from property data file
-- Integrate with Jenkins
+COMPLETED	-> Load data from property data file
+IN PROGRESS	-> Integrate with Jenkins
 - Refactor and improve efficiency of code
 - Add EBGames
