@@ -1,10 +1,8 @@
 //TODO Notes:
 //COMPLETED - Project will search for consoles including: PlayStation 5, PlayStation 5 Digital Edition, Xbox Series X, Xbox Series S
-//1) Create an HTML page displaying the stock status for each product in each store
-//2) Take screenshots for the last step and place them in a folder specific to a store
-
-//2) Location will be within Toronto
-//3) Should take a screen when doing the last step for each store
+//COMPLETED - Create an HTML page displaying the stock status for each product in each store
+//1) Take screenshots for the last step and place them in a folder specific to a store
+//2) Locations will be within Toronto
 
 //TAGS:
 //@AllFeatures
@@ -51,19 +49,17 @@ public class TestRunner {
 	
 	public static WebDriver driver = null;
 	public static String projectPath;
-		
-	//Before everything (scenarios, steps, etc.) replace content of "TestReport.html" to default values
+	public static Properties propertyFile;
+	
 	@BeforeClass
 	public static void writeValuesInHTMLReport() throws IOException {
 		
-		//Property File Example -> to be used inside AmazonSteps.java and BestBuySteps.java
-		FileReader reader=new FileReader("db.properties");
-	    Properties p=new Properties();
-	    p.load(reader);
-	    System.out.println("EXAMPLE - user: " + p.getProperty("user"));
-	    System.out.println("EXAMPLE - password: " +p.getProperty("password"));
+		//Load data from property file
+		FileReader reader = new FileReader("db.properties");
+	    propertyFile = new Properties();
+	    propertyFile.load(reader);
 		
-		
+	    //Before running everything (scenarios, steps, etc.) replace content of "TestReport.html" to default values
 		projectPath = System.getProperty("user.dir");
 		System.out.println("Project path is:" + projectPath);
 		System.setProperty("webdriver.chrome.driver", projectPath+"/src/test/resources/drivers/chromedriver.exe");

@@ -39,9 +39,26 @@ public class AmazonSteps {
 	private AmazonPage amazonPage;
 	private Document doc;
 	private String projectPath;
-	private int defaultSleepTimer = 3000;
+	private int defaultSleepTimer = 2000;
 	private Element div;
 	private Element urlLink;
+	
+	//Amazon Properties
+	private String amazonURL = TestRunner.propertyFile.getProperty("amazonURL");
+	//IDs
+	private String amazonID_PS4 = TestRunner.propertyFile.getProperty("amazonID_PS4");
+	private String amazonID_PS5 = TestRunner.propertyFile.getProperty("amazonID_PS5");
+	private String amazonID_PS5_Digital = TestRunner.propertyFile.getProperty("amazonID_PS5_Digital");
+	private String amazonID_XboxOne = TestRunner.propertyFile.getProperty("amazonID_XboxOne");
+	private String amazonID_XBX = TestRunner.propertyFile.getProperty("amazonID_XBX");
+	private String amazonID_XBS = TestRunner.propertyFile.getProperty("amazonID_XBS");
+	//URLs
+	private String amazonURL_PS4 = TestRunner.propertyFile.getProperty("amazonURL_PS4");
+	private String amazonURL_PS5 = TestRunner.propertyFile.getProperty("amazonURL_PS5");
+	private String amazonURL_PS5_Digital = TestRunner.propertyFile.getProperty("amazonURL_PS5_Digital");
+	private String amazonURL_XboxOne = TestRunner.propertyFile.getProperty("amazonURL_XboxOne");
+	private String amazonURL_XBX = TestRunner.propertyFile.getProperty("amazonURL_XBX");
+	private String amazonURL_XBS = TestRunner.propertyFile.getProperty("amazonURL_XBS");
 
 	@Given("Browser is open - Amazon")
 	public void browser_is_open_amazon() throws IOException {
@@ -62,7 +79,7 @@ public class AmazonSteps {
 	@And("User enters Amazon homepage")
 	public void user_enters_amazon_page() throws InterruptedException {
 
-		driver.navigate().to("https://www.amazon.ca/");
+		driver.navigate().to(amazonURL);
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 	}
 
@@ -98,7 +115,7 @@ public class AmazonSteps {
 		Thread.sleep(defaultSleepTimer);
 	}
 
-	//TODO: Put results for product stock in custom HTML
+	//COMPLETED: Put results for product stock in custom HTML
 	@Then("^User verifies (.*) stock in Amazon$")
 	public void verify_product_is_in_stock(String product) throws Exception {
 		
@@ -111,17 +128,17 @@ public class AmazonSteps {
 			System.out.println(" =========== Product is: OUT OF STOCK =========== ");
 			
 			if (product.equalsIgnoreCase("PlayStation 4")) {
-				div = doc.select("span[id=Amazon-PS4]").first();
-			} else if (product.equalsIgnoreCase("Xbox One Console")) {
-				div = doc.select("span[id=Amazon-XboxOne]").first();
+				div = doc.select(amazonID_PS4).first();
 			} else if (product.equalsIgnoreCase("PlayStation 5")) {
-				div = doc.select("span[id=Amazon-PS5]").first();
+				div = doc.select(amazonID_PS5).first();
 			} else if (product.equalsIgnoreCase("PlayStation 5 Digital Edition")) {
-				div = doc.select("span[id=Amazon-PS5-Digital]").first();
+				div = doc.select(amazonID_PS5_Digital).first();
+			} else if (product.equalsIgnoreCase("Xbox One Console")) {
+				div = doc.select(amazonID_XboxOne).first();
 			} else if (product.equalsIgnoreCase("Xbox Series X")) {
-				div = doc.select("span[id=Amazon-XBX]").first();
+				div = doc.select(amazonID_XBX).first();
 			} else if (product.equalsIgnoreCase("Xbox Series S")) {
-				div = doc.select("span[id=Amazon-XBS]").first();
+				div = doc.select(amazonID_XBS).first();
 			}
 			
 			div.text("OUT OF STOCK");
@@ -139,23 +156,23 @@ public class AmazonSteps {
 			System.out.println("=========== Product is: IN STOCK ===========");
 			
 			if (product.equalsIgnoreCase("PlayStation 4")) {
-				div = doc.select("span[id=Amazon-PS4]").first();
-				urlLink = doc.select("a[id=Amazon-PS4-URL]").first();
-			} else if (product.equalsIgnoreCase("Xbox One Console")) {
-				div = doc.select("span[id=Amazon-XboxOne]").first();
-				urlLink = doc.select("a[id=Amazon-XboxOne-URL]").first();
+				div = doc.select(amazonID_PS4).first();
+				urlLink = doc.select(amazonURL_PS4).first();
 			} else if (product.equalsIgnoreCase("PlayStation 5")) {
-				div = doc.select("span[id=Amazon-PS5]").first();
-				urlLink = doc.select("a[id=Amazon-PS5-URL]").first();
+				div = doc.select(amazonID_PS5).first();
+				urlLink = doc.select(amazonURL_PS5).first();
 			} else if (product.equalsIgnoreCase("PlayStation 5 Digital Edition")) {
-				div = doc.select("span[id=Amazon-Amazon-PS5-Digital]").first();
-				urlLink = doc.select("a[id=Amazon-PS5-Digital-URL]").first();
+				div = doc.select(amazonID_PS5_Digital).first();
+				urlLink = doc.select(amazonURL_PS5_Digital).first();
+			} else if (product.equalsIgnoreCase("Xbox One Console")) {
+				div = doc.select(amazonID_XboxOne).first();
+				urlLink = doc.select(amazonURL_XboxOne).first();
 			} else if (product.equalsIgnoreCase("Xbox Series X")) {
-				div = doc.select("span[id=Amazon-XBX]").first();
-				urlLink = doc.select("a[id=Amazon-XBX-URL]").first();
+				div = doc.select(amazonID_XBX).first();
+				urlLink = doc.select(amazonURL_XBX).first();
 			} else if (product.equalsIgnoreCase("Xbox Series S")) {
-				div = doc.select("span[id=Amazon-XBS]").first();
-				urlLink = doc.select("a[id=Amazon-XBS-URL]").first();
+				div = doc.select(amazonID_XBS).first();
+				urlLink = doc.select(amazonURL_XBS).first();	
 			} 
 			
 			div.text("IN STOCK - ");

@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-12-26T17:11:52.395Z",
+        "start_timestamp": "2020-12-27T18:32:04.269Z",
         "line": 15,
         "name": "Verify stock in Amazon for - PlayStation 4",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3000000,
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 1435000000,
+              "duration": 2119000000,
               "status": "passed"
             },
             "line": 6,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 166000000,
+              "duration": 229000000,
               "status": "passed"
             },
             "line": 7,
@@ -55,7 +55,7 @@
           },
           {
             "result": {
-              "duration": 4743000000,
+              "duration": 3625000000,
               "status": "passed"
             },
             "line": 8,
@@ -67,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 449000000,
+              "duration": 311000000,
               "status": "passed"
             },
             "line": 9,
@@ -85,7 +85,7 @@
           },
           {
             "result": {
-              "duration": 6904000000,
+              "duration": 6519000000,
               "status": "passed"
             },
             "line": 10,
@@ -103,7 +103,7 @@
           },
           {
             "result": {
-              "duration": 755000000,
+              "duration": 828000000,
               "status": "passed"
             },
             "line": 11,
@@ -112,6 +112,641 @@
               "arguments": [
                 {
                   "val": "PlayStation 4",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.AmazonSteps.verify_product_is_in_stock(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AllFeatures"
+          },
+          {
+            "name": "@AmazonFeature"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-27T18:32:17.972Z",
+        "line": 16,
+        "name": "Verify stock in Amazon for - PlayStation 5",
+        "description": "",
+        "id": "feature-to-test-product-stock-in-amazon;verify-stock-in-amazon-for---\u003cproduct\u003e;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Browser is open - Amazon",
+            "match": {
+              "location": "StepDefinitions.AmazonSteps.browser_is_open_amazon()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1363000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters Amazon homepage",
+            "match": {
+              "location": "StepDefinitions.AmazonSteps.user_enters_amazon_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 109000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User inputs a PlayStation 5 in Amazon search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PlayStation 5",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.AmazonSteps.user_enters_a_text_in_search_box_amazon(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3611000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks Amazon search button",
+            "match": {
+              "location": "StepDefinitions.AmazonSteps.user_clicks_amazon_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 291000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is on Amazon PlayStation 5 results page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PlayStation 5",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.AmazonSteps.user_is_on_product_results_page(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6894000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks Amazon PlayStation 5 link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PlayStation 5",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinitions.AmazonSteps.click_product_link(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinitions.AmazonSteps.verify_product_is_in_stock(AmazonSteps.java:152)\r\n\tat ✽.User verifies PlayStation 5 stock in Amazon(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/Amazon.feature:11)\r\n",
+              "duration": 675000000,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "User verifies PlayStation 5 stock in Amazon",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PlayStation 5",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.AmazonSteps.verify_product_is_in_stock(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AllFeatures"
+          },
+          {
+            "name": "@AmazonFeature"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-27T18:32:30.925Z",
+        "line": 17,
+        "name": "Verify stock in Amazon for - PlayStation 5 Digital Edition",
+        "description": "",
+        "id": "feature-to-test-product-stock-in-amazon;verify-stock-in-amazon-for---\u003cproduct\u003e;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Browser is open - Amazon",
+            "match": {
+              "location": "StepDefinitions.AmazonSteps.browser_is_open_amazon()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1098000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters Amazon homepage",
+            "match": {
+              "location": "StepDefinitions.AmazonSteps.user_enters_amazon_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 147000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User inputs a PlayStation 5 Digital Edition in Amazon search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PlayStation 5 Digital Edition",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.AmazonSteps.user_enters_a_text_in_search_box_amazon(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2102000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks Amazon search button",
+            "match": {
+              "location": "StepDefinitions.AmazonSteps.user_clicks_amazon_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 273000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is on Amazon PlayStation 5 Digital Edition results page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PlayStation 5 Digital Edition",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.AmazonSteps.user_is_on_product_results_page(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4819000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks Amazon PlayStation 5 Digital Edition link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PlayStation 5 Digital Edition",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinitions.AmazonSteps.click_product_link(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinitions.AmazonSteps.verify_product_is_in_stock(AmazonSteps.java:152)\r\n\tat ✽.User verifies PlayStation 5 Digital Edition stock in Amazon(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/Amazon.feature:11)\r\n",
+              "duration": 643000000,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "User verifies PlayStation 5 Digital Edition stock in Amazon",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PlayStation 5 Digital Edition",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.AmazonSteps.verify_product_is_in_stock(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AllFeatures"
+          },
+          {
+            "name": "@AmazonFeature"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-27T18:32:40.013Z",
+        "line": 18,
+        "name": "Verify stock in Amazon for - Xbox One Console",
+        "description": "",
+        "id": "feature-to-test-product-stock-in-amazon;verify-stock-in-amazon-for---\u003cproduct\u003e;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Browser is open - Amazon",
+            "match": {
+              "location": "StepDefinitions.AmazonSteps.browser_is_open_amazon()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1037000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters Amazon homepage",
+            "match": {
+              "location": "StepDefinitions.AmazonSteps.user_enters_amazon_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 115000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User inputs a Xbox One Console in Amazon search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Xbox One Console",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.AmazonSteps.user_enters_a_text_in_search_box_amazon(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2097000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks Amazon search button",
+            "match": {
+              "location": "StepDefinitions.AmazonSteps.user_clicks_amazon_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 290000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is on Amazon Xbox One Console results page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Xbox One Console",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.AmazonSteps.user_is_on_product_results_page(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4960000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks Amazon Xbox One Console link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Xbox One Console",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinitions.AmazonSteps.click_product_link(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 737000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User verifies Xbox One Console stock in Amazon",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Xbox One Console",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.AmazonSteps.verify_product_is_in_stock(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AllFeatures"
+          },
+          {
+            "name": "@AmazonFeature"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-27T18:32:49.252Z",
+        "line": 19,
+        "name": "Verify stock in Amazon for - Xbox Series X",
+        "description": "",
+        "id": "feature-to-test-product-stock-in-amazon;verify-stock-in-amazon-for---\u003cproduct\u003e;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Browser is open - Amazon",
+            "match": {
+              "location": "StepDefinitions.AmazonSteps.browser_is_open_amazon()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1063000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters Amazon homepage",
+            "match": {
+              "location": "StepDefinitions.AmazonSteps.user_enters_amazon_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 158000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User inputs a Xbox Series X in Amazon search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Xbox Series X",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.AmazonSteps.user_enters_a_text_in_search_box_amazon(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3552000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks Amazon search button",
+            "match": {
+              "location": "StepDefinitions.AmazonSteps.user_clicks_amazon_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 284000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is on Amazon Xbox Series X results page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Xbox Series X",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.AmazonSteps.user_is_on_product_results_page(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4781000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks Amazon Xbox Series X link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Xbox Series X",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinitions.AmazonSteps.click_product_link(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinitions.AmazonSteps.verify_product_is_in_stock(AmazonSteps.java:152)\r\n\tat ✽.User verifies Xbox Series X stock in Amazon(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/Amazon.feature:11)\r\n",
+              "duration": 692000000,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "User verifies Xbox Series X stock in Amazon",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Xbox Series X",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.AmazonSteps.verify_product_is_in_stock(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AllFeatures"
+          },
+          {
+            "name": "@AmazonFeature"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-27T18:32:59.788Z",
+        "line": 20,
+        "name": "Verify stock in Amazon for - Xbox Series S",
+        "description": "",
+        "id": "feature-to-test-product-stock-in-amazon;verify-stock-in-amazon-for---\u003cproduct\u003e;;7",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Browser is open - Amazon",
+            "match": {
+              "location": "StepDefinitions.AmazonSteps.browser_is_open_amazon()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1081000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters Amazon homepage",
+            "match": {
+              "location": "StepDefinitions.AmazonSteps.user_enters_amazon_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 140000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User inputs a Xbox Series S in Amazon search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Xbox Series S",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.AmazonSteps.user_enters_a_text_in_search_box_amazon(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3549000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks Amazon search button",
+            "match": {
+              "location": "StepDefinitions.AmazonSteps.user_clicks_amazon_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 281000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is on Amazon Xbox Series S results page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Xbox Series S",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.AmazonSteps.user_is_on_product_results_page(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4422000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks Amazon Xbox Series S link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Xbox Series S",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinitions.AmazonSteps.click_product_link(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinitions.AmazonSteps.verify_product_is_in_stock(AmazonSteps.java:152)\r\n\tat ✽.User verifies Xbox Series S stock in Amazon(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/Amazon.feature:11)\r\n",
+              "duration": 690000000,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "User verifies Xbox Series S stock in Amazon",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Xbox Series S",
                   "offset": 14
                 }
               ],
@@ -146,6 +781,689 @@
       },
       {
         "name": "@AmazonFeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 14
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-27T18:33:09.954Z",
+        "line": 15,
+        "name": "Verify stock in BestBuy for - PlayStation 4",
+        "description": "",
+        "id": "feature-to-test-product-stock-in-bestbuy;verify-stock-in-bestbuy-for---\u003cproduct\u003e;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Browser is open - BestBuy",
+            "match": {
+              "location": "StepDefinitions.BestBuySteps.browser_is_open_bestbuy()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4148000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters BestBuy homepage",
+            "match": {
+              "location": "StepDefinitions.BestBuySteps.user_is_on_bestbuy_search_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2157000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User inputs a PlayStation 4 in BestBuy search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PlayStation 4",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.BestBuySteps.user_enters_product_in_search_box(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2570000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks BestBuy search button",
+            "match": {
+              "location": "StepDefinitions.BestBuySteps.user_clicks_bestbuy_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2467000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks BestBuy PlayStation 4 link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PlayStation 4",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefinitions.BestBuySteps.user_is_navigated_to_product_results_click_product(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinitions.BestBuySteps.confirm_product_is_in_stock(BestBuySteps.java:131)\r\n\tat ✽.User verifies PlayStation 4 stock in BestBuy(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/BestBuy.feature:11)\r\n",
+              "duration": 1102000000,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "User verifies PlayStation 4 stock in BestBuy",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PlayStation 4",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.BestBuySteps.confirm_product_is_in_stock(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AllFeatures"
+          },
+          {
+            "name": "@BestBuyFeature"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-27T18:33:22.406Z",
+        "line": 16,
+        "name": "Verify stock in BestBuy for - PlayStation 5",
+        "description": "",
+        "id": "feature-to-test-product-stock-in-bestbuy;verify-stock-in-bestbuy-for---\u003cproduct\u003e;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Browser is open - BestBuy",
+            "match": {
+              "location": "StepDefinitions.BestBuySteps.browser_is_open_bestbuy()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11034000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters BestBuy homepage",
+            "match": {
+              "location": "StepDefinitions.BestBuySteps.user_is_on_bestbuy_search_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2179000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User inputs a PlayStation 5 in BestBuy search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PlayStation 5",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.BestBuySteps.user_enters_product_in_search_box(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2646000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks BestBuy search button",
+            "match": {
+              "location": "StepDefinitions.BestBuySteps.user_clicks_bestbuy_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2445000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks BestBuy PlayStation 5 link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PlayStation 5",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefinitions.BestBuySteps.user_is_navigated_to_product_results_click_product(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinitions.BestBuySteps.confirm_product_is_in_stock(BestBuySteps.java:131)\r\n\tat ✽.User verifies PlayStation 5 stock in BestBuy(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/BestBuy.feature:11)\r\n",
+              "duration": 946000000,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "User verifies PlayStation 5 stock in BestBuy",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PlayStation 5",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.BestBuySteps.confirm_product_is_in_stock(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AllFeatures"
+          },
+          {
+            "name": "@BestBuyFeature"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-27T18:33:41.661Z",
+        "line": 17,
+        "name": "Verify stock in BestBuy for - PlayStation 5 Digital Edition",
+        "description": "",
+        "id": "feature-to-test-product-stock-in-bestbuy;verify-stock-in-bestbuy-for---\u003cproduct\u003e;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Browser is open - BestBuy",
+            "match": {
+              "location": "StepDefinitions.BestBuySteps.browser_is_open_bestbuy()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11577000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters BestBuy homepage",
+            "match": {
+              "location": "StepDefinitions.BestBuySteps.user_is_on_bestbuy_search_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2370000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User inputs a PlayStation 5 Digital Edition in BestBuy search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PlayStation 5 Digital Edition",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.BestBuySteps.user_enters_product_in_search_box(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2562000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks BestBuy search button",
+            "match": {
+              "location": "StepDefinitions.BestBuySteps.user_clicks_bestbuy_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2482000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks BestBuy PlayStation 5 Digital Edition link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PlayStation 5 Digital Edition",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefinitions.BestBuySteps.user_is_navigated_to_product_results_click_product(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinitions.BestBuySteps.confirm_product_is_in_stock(BestBuySteps.java:131)\r\n\tat ✽.User verifies PlayStation 5 Digital Edition stock in BestBuy(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/BestBuy.feature:11)\r\n",
+              "duration": 1028000000,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "User verifies PlayStation 5 Digital Edition stock in BestBuy",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PlayStation 5 Digital Edition",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.BestBuySteps.confirm_product_is_in_stock(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AllFeatures"
+          },
+          {
+            "name": "@BestBuyFeature"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-27T18:34:01.686Z",
+        "line": 18,
+        "name": "Verify stock in BestBuy for - Xbox One Console",
+        "description": "",
+        "id": "feature-to-test-product-stock-in-bestbuy;verify-stock-in-bestbuy-for---\u003cproduct\u003e;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Browser is open - BestBuy",
+            "match": {
+              "location": "StepDefinitions.BestBuySteps.browser_is_open_bestbuy()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11589000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters BestBuy homepage",
+            "match": {
+              "location": "StepDefinitions.BestBuySteps.user_is_on_bestbuy_search_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2235000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User inputs a Xbox One Console in BestBuy search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Xbox One Console",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.BestBuySteps.user_enters_product_in_search_box(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2587000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks BestBuy search button",
+            "match": {
+              "location": "StepDefinitions.BestBuySteps.user_clicks_bestbuy_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2469000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks BestBuy Xbox One Console link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Xbox One Console",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefinitions.BestBuySteps.user_is_navigated_to_product_results_click_product(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinitions.BestBuySteps.confirm_product_is_in_stock(BestBuySteps.java:131)\r\n\tat ✽.User verifies Xbox One Console stock in BestBuy(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/BestBuy.feature:11)\r\n",
+              "duration": 1748000000,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "User verifies Xbox One Console stock in BestBuy",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Xbox One Console",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.BestBuySteps.confirm_product_is_in_stock(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AllFeatures"
+          },
+          {
+            "name": "@BestBuyFeature"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-27T18:34:22.319Z",
+        "line": 19,
+        "name": "Verify stock in BestBuy for - Xbox Series X",
+        "description": "",
+        "id": "feature-to-test-product-stock-in-bestbuy;verify-stock-in-bestbuy-for---\u003cproduct\u003e;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Browser is open - BestBuy",
+            "match": {
+              "location": "StepDefinitions.BestBuySteps.browser_is_open_bestbuy()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11099000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters BestBuy homepage",
+            "match": {
+              "location": "StepDefinitions.BestBuySteps.user_is_on_bestbuy_search_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2217000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User inputs a Xbox Series X in BestBuy search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Xbox Series X",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.BestBuySteps.user_enters_product_in_search_box(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2560000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks BestBuy search button",
+            "match": {
+              "location": "StepDefinitions.BestBuySteps.user_clicks_bestbuy_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2410000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks BestBuy Xbox Series X link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Xbox Series X",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefinitions.BestBuySteps.user_is_navigated_to_product_results_click_product(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinitions.BestBuySteps.confirm_product_is_in_stock(BestBuySteps.java:131)\r\n\tat ✽.User verifies Xbox Series X stock in BestBuy(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/BestBuy.feature:11)\r\n",
+              "duration": 1399000000,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "User verifies Xbox Series X stock in BestBuy",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Xbox Series X",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.BestBuySteps.confirm_product_is_in_stock(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AllFeatures"
+          },
+          {
+            "name": "@BestBuyFeature"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-27T18:34:42.009Z",
+        "line": 20,
+        "name": "Verify stock in BestBuy for - Xbox Series S",
+        "description": "",
+        "id": "feature-to-test-product-stock-in-bestbuy;verify-stock-in-bestbuy-for---\u003cproduct\u003e;;7",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Browser is open - BestBuy",
+            "match": {
+              "location": "StepDefinitions.BestBuySteps.browser_is_open_bestbuy()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6177000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters BestBuy homepage",
+            "match": {
+              "location": "StepDefinitions.BestBuySteps.user_is_on_bestbuy_search_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2225000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User inputs a Xbox Series S in BestBuy search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Xbox Series S",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.BestBuySteps.user_enters_product_in_search_box(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2571000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks BestBuy search button",
+            "match": {
+              "location": "StepDefinitions.BestBuySteps.user_clicks_bestbuy_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11538000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks BestBuy Xbox Series S link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Xbox Series S",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefinitions.BestBuySteps.user_is_navigated_to_product_results_click_product(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat StepDefinitions.BestBuySteps.confirm_product_is_in_stock(BestBuySteps.java:131)\r\n\tat ✽.User verifies Xbox Series S stock in BestBuy(file:///C:/Users/David/eclipse-workspace/ConsoleStockTracker/src/test/resources/Features/BestBuy.feature:11)\r\n",
+              "duration": 2530000000,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "User verifies Xbox Series S stock in BestBuy",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Xbox Series S",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.BestBuySteps.confirm_product_is_in_stock(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AllFeatures"
+          },
+          {
+            "name": "@BestBuyFeature"
+          }
+        ]
+      }
+    ],
+    "name": "Feature to test product stock in BestBuy",
+    "description": "",
+    "id": "feature-to-test-product-stock-in-bestbuy",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/BestBuy.feature",
+    "tags": [
+      {
+        "name": "@AllFeatures",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@BestBuyFeature",
         "type": "Tag",
         "location": {
           "line": 1,

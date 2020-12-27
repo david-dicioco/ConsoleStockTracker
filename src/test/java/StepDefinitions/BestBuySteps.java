@@ -27,9 +27,27 @@ public class BestBuySteps {
 	private BestBuyPage bestbuyPage;
 	private Document doc;
 	private String projectPath;
-	private int defaultSleepTimer = 4000; //2000
+	private int defaultSleepTimer = 2000; //4000
 	private Element div;
 	private Element urlLink;
+	
+	//BestBuy Properties
+	private String bestbuyURL = TestRunner.propertyFile.getProperty("bestbuyURL");
+	//IDs
+	private String bestbuyID_PS4 = TestRunner.propertyFile.getProperty("bestbuyID_PS4");
+	private String bestbuyID_PS5 = TestRunner.propertyFile.getProperty("bestbuyID_PS5");
+	private String bestbuyID_PS5_Digital = TestRunner.propertyFile.getProperty("bestbuyID_PS5_Digital");
+	private String bestbuyID_XboxOne = TestRunner.propertyFile.getProperty("bestbuyID_XboxOne");
+	private String bestbuyID_XBX = TestRunner.propertyFile.getProperty("bestbuyID_XBX");
+	private String bestbuyID_XBS = TestRunner.propertyFile.getProperty("bestbuyID_XBS");
+	//URLs
+	private String bestbuyURL_PS4 = TestRunner.propertyFile.getProperty("bestbuyURL_PS4");
+	private String bestbuyURL_PS5 = TestRunner.propertyFile.getProperty("bestbuyURL_PS5");
+	private String bestbuyURL_PS5_Digital = TestRunner.propertyFile.getProperty("bestbuyURL_PS5_Digital");
+	private String bestbuyURL_XboxOne = TestRunner.propertyFile.getProperty("bestbuyURL_XboxOne");
+	private String bestbuyURL_XBX = TestRunner.propertyFile.getProperty("bestbuyURL_XBX");
+	private String bestbuyURL_XBS = TestRunner.propertyFile.getProperty("bestbuyURL_XBS");
+	
 
 	@Given("Browser is open - BestBuy")
 	public void browser_is_open_bestbuy() {
@@ -49,7 +67,7 @@ public class BestBuySteps {
 	
 	@And("User enters BestBuy homepage")
 	public void user_is_on_bestbuy_search_page() {
-		driver.navigate().to("https://www.bestbuy.ca/en-ca");
+		driver.navigate().to(bestbuyURL);
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 	}
 	
@@ -75,7 +93,7 @@ public class BestBuySteps {
 		Thread.sleep(defaultSleepTimer);
 	}
 	
-	//TODO: Whatever the result is, put in custom HTML
+	//COMPLETED: Put results for product stock in custom HTML
 	@And("^User verifies (.*) stock in BestBuy$")
 	public void confirm_product_is_in_stock(String product) throws Exception {
 		
@@ -88,17 +106,17 @@ public class BestBuySteps {
 			System.out.println(" =========== Product is: OUT OF STOCK =========== ");
 			
 			if (product.equalsIgnoreCase("PlayStation 4")) {
-				div = doc.select("span[id=BestBuy-PS4]").first();
-			} else if (product.equalsIgnoreCase("Xbox One Console")) {
-				div = doc.select("span[id=BestBuy-XboxOne]").first();
-			} else if (product.equalsIgnoreCase("PlayStation 5")) {
-				div = doc.select("span[id=BestBuy-PS5]").first();
+				div = doc.select(bestbuyID_PS4).first();
+			}  else if (product.equalsIgnoreCase("PlayStation 5")) {
+				div = doc.select(bestbuyID_PS5).first();
 			} else if (product.equalsIgnoreCase("PlayStation 5 Digital Edition")) {
-				div = doc.select("span[id=BestBuy-PS5-Digital]").first();
+				div = doc.select(bestbuyID_PS5_Digital).first();
+			} else if (product.equalsIgnoreCase("Xbox One Console")) {
+				div = doc.select(bestbuyID_XboxOne).first();
 			} else if (product.equalsIgnoreCase("Xbox Series X")) {
-				div = doc.select("span[id=BestBuy-XBX]").first();
+				div = doc.select(bestbuyID_XBX).first();
 			} else if (product.equalsIgnoreCase("Xbox Series S")) {
-				div = doc.select("span[id=BestBuy-XBS]").first();
+				div = doc.select(bestbuyID_XBS).first();
 			}
 			
 			div.text("OUT OF STOCK");
@@ -116,32 +134,25 @@ public class BestBuySteps {
 			
 			System.out.println("=========== Product is: IN STOCK ===========");
 			
-			
 			if (product.equalsIgnoreCase("PlayStation 4")) {
-				div = doc.select("span[id=BestBuy-PS4]").first();
-				urlLink = doc.select("a[id=BestBuy-PS4-URL]").first();
-				
-			} else if (product.equalsIgnoreCase("Xbox One Console")) {
-				div = doc.select("span[id=BestBuy-XboxOne]").first();
-				urlLink = doc.select("a[id=BestBuy-XboxOne-URL]").first();
-				
-			} else if (product.equalsIgnoreCase("PlayStation 5")) {
-				div = doc.select("span[id=BestBuy-PS5]").first();
-				urlLink = doc.select("a[id=BestBuy-PS5-URL]").first();
-				
+				div = doc.select(bestbuyID_PS4).first();
+				urlLink = doc.select(bestbuyURL_PS4).first();
+			}  else if (product.equalsIgnoreCase("PlayStation 5")) {
+				div = doc.select(bestbuyID_PS5).first();
+				urlLink = doc.select(bestbuyURL_PS5).first();
 			} else if (product.equalsIgnoreCase("PlayStation 5 Digital Edition")) {
-				div = doc.select("span[id=BestBuy-PS5-Digital]").first();
-				urlLink = doc.select("a[id=BestBuy-PS5-Digital-URL]").first();
-				
+				div = doc.select(bestbuyID_PS5_Digital).first();
+				urlLink = doc.select(bestbuyURL_PS5_Digital).first();
+			} else if (product.equalsIgnoreCase("Xbox One Console")) {
+				div = doc.select(bestbuyID_XboxOne).first();
+				urlLink = doc.select(bestbuyURL_XboxOne).first();
 			} else if (product.equalsIgnoreCase("Xbox Series X")) {
-				div = doc.select("span[id=BestBuy-XBX]").first();
-				urlLink = doc.select("a[id=BestBuy-XBX-URL]").first();
-				
+				div = doc.select(bestbuyID_XBX).first();
+				urlLink = doc.select(bestbuyURL_XBX).first();
 			} else if (product.equalsIgnoreCase("Xbox Series S")) {
-				div = doc.select("span[id=BestBuy-XBS]").first();
-				urlLink = doc.select("a[id=Amazon-XBS-URL]").first();
-				
-			} 
+				div = doc.select(bestbuyID_XBS).first();
+				urlLink = doc.select(bestbuyURL_XBS).first();
+			}
 			
 			div.text("IN STOCK - ");
 			urlLink.attr("href", driver.getCurrentUrl());
